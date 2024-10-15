@@ -1,0 +1,15 @@
+import datetime
+nomedia = []
+nomedia.append('SEG')
+nomedia.append('TER')
+nomedia.append('QUA')
+nomedia.append('QUI')
+nomedia.append('SEX')
+nomedia.append('SAB')
+nomedia.append('DOM')
+dia = int(input('Digite o dia: '))
+mes = int(input('Digite o mes: '))
+ano = int(input('Digite o ano: '))
+x = datetime.datetime(ano, mes, dia)
+semana = x.weekday()
+print(nomedia[semana])
